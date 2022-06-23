@@ -1,0 +1,79 @@
+
+
+
+
+       <!DOCTYPE html>
+       <html lang="en">
+       <head>
+           <meta charset="UTF-8">
+           <meta http-equiv="X-UA-Compatible" content="IE=edge">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <script src="https://kit.fontawesome.com/e3831a00ca.js" crossorigin="anonymous"></script>
+           <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+           <link rel="stylesheet" href="/css/styles.css">
+             <title>Contact</title>
+       </head>
+
+       <body>
+           <div class="add-container" id="add-container">
+               <div class="navigation">
+                   <div class="for-logo">
+                       <a><i class="fa fa-bars" id="one"></i></a>
+                       <a href="/"><img src="/images/logo.webp" alt="logo"></a>
+                       <a><i class="fa fa-bars" id="two" onclick="navigation()"></i></a>
+                   </div>
+                   <div class="navigation-bar" id="navigation-bar">
+                       <nav>
+                           <ul>
+                             <li><a href="/">Home</a></li>
+                             <li><a href="/blogs">Articles</a></li>
+                             <li><a href="https://rzp.io/l/8wUdOlkuS" target="_blank">Contribute</a></li>
+                             <li><a href="/signin">Signin</a></li>
+                             <li><a href="/contact">Contact Us</a></li>
+                           </ul>
+                       </nav>
+                   </div>
+               </div>
+               <div class="add-story-form" data-aos="zoom-in" data-aos-duration="700">
+                 <form method="post" action="/contact">
+                            <h2 data-aos="fade-down" data-aos-duration="600">Ask Something!!</h2>
+                            <label for="Name">Name *</label>
+                            <input type="text" name="name" placeholder="Enter your name" required>
+                            <label for="Phone">Phone</label>
+                            <input type="text" name="phone" placeholder="Enter your phone number">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Email" required name="email">
+                            <label for="Message">Why do you want to volunteer?</label>
+                            <textarea name="whyvolunteer" placeholder="Write your answer here" required></textarea>
+                            <label for="profileURL">Link to your CV/ LinkedIn/ Portfolio *</label>
+                            <input type="text" name="linkcv" required placeholder="URL">
+                            <label for="field">I would like to engage with *</label>
+                                <select name="engage" required>
+                                    <option value="" disabled selected>Choose an option</option>
+                                    <option value="Design">Design</option>
+                                    <option value="Communications/ Social Media">Communications/ Social Media</option>
+                                    <option value="Fundraising">Fundraising</option>
+                                    <option value="Writing a blog article">Writing a blog article</option>
+                            <input type="submit" value="Submit">
+                        </form>
+
+               </div>
+           </div>
+           <div class="footer">
+               <div class="social">
+                   <a href=""><i class="fa fa-facebook"></i></a>
+                   <a href=""><i class="fa fa-twitter"></i></a>
+                   <a href=""><i class="fa fa-instagram"></i></a>
+                   <a href="mailto:contact@womenforpolitics.com"><i class="fa fa-envelope"></i></a>
+                   <a href=""><i class="fa fa-linkedin"></i></a>
+                   <a href=""><i class="fa fa-youtube"></i></a>
+               </div>
+               <p>Copyright © 2022 Women for Politics | All rights reserved</p>
+           </div>
+           <script src="assets/js/script.js"></script>
+           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+           <script>
+               AOS.init();
+           </script>
+       </body>
+       </html>

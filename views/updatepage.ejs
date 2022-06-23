@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="submission.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Updating Article!!</div>
+    <div class="content">
+      <form action="/article" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <input type="hidden" name ="email" value=<%=result.email%> required>
+          </div>
+          <div class="input-box">
+            <input type="text" name ="name" value=<%= result.name%> required>
+          </div>
+          <div class="input-box">
+            <input type="text" name ="title" value=<%= result.title%> required>
+          </div>
+          <div class="input-box">
+            <textarea name="content" value=<%= result.content%>></textarea>
+          </div>
+          <div class="input-box">
+            <input type="text" name="photo"  value=<%= result.photo%> draggable="true" cols=100 rows=4></input>
+          </div>
+          <div class="input-box">
+            <input type="text" name="video" value=<%= result.video%> draggable="true" cols=100 rows=4></input>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
